@@ -1,0 +1,26 @@
+    .contacts-list {
+        display: flex;
+        margin-left: auto;
+        column-gap: 50px;
+    }
+    .contacts {
+        display: flex;
+        align-items: center;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+
+        color: var(--main-text-color);
+
+        transition: color var(--duration) var(--timing-function);
+    }
+    .contacts-icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+        
+        .contacts:hover, 
+        .contacts:focus {
+        color: var(--accent-color);
+        }

@@ -1,0 +1,38 @@
+.navsite {margin-left: 90px;}
+    .navsite-list {
+        display: flex;
+        column-gap: 50px;
+    }
+    .navsite-item {
+        position: relative;
+    }
+
+    .link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+
+        color: var(--title-text-color);
+
+        transition: color var(--duration) var(--timing-function);
+        }
+            .link:hover,
+            .link:focus {color: var(--accent-color);}
+            .link.current {color: var(--accent-color);}
+
+            .link.current::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                width: 100%;
+                height: 4px;
+                
+                background-color: var(--accent-color);
+                border-radius: 2px;
+            }
