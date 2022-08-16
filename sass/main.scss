@@ -7,7 +7,7 @@
 @import "./components/container";
 @import "./components/button";
 
-// section
+// site
 @import "./layout/header/header-main";
 @import "./layout/header/header-logo";
 @import "./layout/header/header-navigation";
@@ -18,3 +18,16 @@
 @import "./layout/main/ourworks";
 @import "./layout/main/team";
 @import "./layout/main/clients";
+
+@import "./layout/portfolio/button-list";
+@import "./layout/portfolio/cards";
+
+@import "./layout/footer/footer-main";
+@import "./layout/footer/footer-address";
+@import "./layout/footer/footer-soc";
+@import "./layout/footer/footer-form";
+
+// modal
+@import "./layout/modal/backdrop";
+@import "./layout/modal/modal";
+@import "./layout/modal/modal-form";
