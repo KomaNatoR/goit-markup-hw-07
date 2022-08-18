@@ -1,6 +1,7 @@
-.clients {background-color: var(--main-sections-color);}
+.clients {
+    background-color: var(--main-sections-color);
 
-    .clients-title {
+    &__title {
         margin-bottom: 50px;
 
         font-weight: 700;
@@ -11,6 +12,7 @@
         
         color: var(--title-text-color);
     }
+}
 
     .clients-list {
         display: flex;
@@ -18,8 +20,8 @@
         gap: 30px;
         
     }
-        .clients-list-item {}
-        .clients-list-link {
+
+        .clients-list-item__link {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,10 +36,11 @@
             transition: border-color var(--duration) var(--timing-function), 
                 color var(--duration) var(--timing-function),
                 outline-color var(--duration) var(--timing-function);
-        }
-            .clients-list-icon {fill: currentColor;}
-        .clients-list-link:hover, .clients-list-link:focus {
+
+            &:hover, &:focus {
             border-color: var(--accent-color);
             color: var(--accent-color);
             outline-color: var(--accent-color);
+            }
         }
+            .clients-list-item__icon {fill: currentColor;}

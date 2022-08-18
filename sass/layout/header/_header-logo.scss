@@ -8,17 +8,18 @@
         color: #ffffff;
 
         transition: color var(--duration) var(--timing-function);
+
+        &:hover,
+        &:focus { color: var(--accent-color);   }
         }
     
-        .logo-web { color: var(--accent-color);       }
-        .logo-studio {           
+        .logo__web { color: var(--accent-color);       }
+        
+        .logo__studio {           
             color: #000000;
 
         transition: color var(--duration) var(--timing-function);
+
+        &:hover,
+        &:focus {color: var(--accent-color); }        
         }
-    
-        .logo:hover,
-        .logo:focus { color: var(--accent-color);   }
-    
-        .logo-studio:hover,
-        .logo-studio:focus {color: var(--accent-color); }

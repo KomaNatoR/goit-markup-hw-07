@@ -1,7 +1,7 @@
 .team {
     background-color: var(--back-teamsection-color);
-}
-    .team-title {
+
+    &__title {
         margin-bottom: 50px;
 
         font-weight: 700;
@@ -11,6 +11,8 @@
 
         color: var(--title-text-color);
     }
+}
+
 
     .team-list {
         display: flex;
@@ -25,12 +27,11 @@
 
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        background-color: var(--main-sections-color)
-    }
+        background-color: var(--main-sections-color);
 
-        .team-list-img {margin-bottom: 30px;}
+        &__img {margin-bottom: 30px;}
 
-        .team-card-title {
+        &__title {
             margin-bottom: 10px;
             
             font-weight: 500;
@@ -40,7 +41,7 @@
 
             color: var(--title-text-color);
         }
-        .team-card-text {
+        &__text {
             margin-bottom: 16px;
 
             font-weight: 400;
@@ -50,13 +51,15 @@
 
             color: var(--main-text-color);
         }
-            .team-soc-list {
+    }
+
+            .soc-list {
                 display: flex;
                 justify-content: center;
                 gap: 10px;
             }
-            .team-soc-item {}
-            .team-soc-link {
+            
+            .soc-list__link {
                 width: 44px;
                 height: 44px;
                 border-radius: 50%;
@@ -67,12 +70,15 @@
 
                 color: var(--main-icons-color);
 
-                transition: background-color var(--duration) var(--timing-function), 
-                    color var(--duration) var(--timing-function);
+                transition: 
+                background-color var(--duration) var(--timing-function), 
+                color var(--duration) var(--timing-function);
+
+                &:hover, &:focus {
+                    background-color: var(--accent-color);
+                    color: #FFFFFF;
+                    outline-color: #FFFFFF;
+                }
             }
-            .team-soc-icon {fill: currentColor;}
-            .team-soc-link:hover, .team-soc-link:focus {
-                background-color: var(--accent-color);
-                color: #FFFFFF;
-                outline-color: #FFFFFF;
-            }
+
+            .soc-list__icon {fill: currentColor;}

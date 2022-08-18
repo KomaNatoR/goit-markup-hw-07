@@ -1,9 +1,10 @@
-    .contacts-list {
+    .contacts {
         display: flex;
-        margin-left: auto;
         column-gap: 50px;
     }
-    .contacts {
+    .contacts--margin {margin-left: auto;}
+    
+    .contacts__link {
         display: flex;
         align-items: center;
 
@@ -14,13 +15,12 @@
         color: var(--main-text-color);
 
         transition: color var(--duration) var(--timing-function);
+
+        &:hover, 
+        &:focus { color: var(--accent-color); }
     }
-    .contacts-icon {
+    .contacts__icon {
         margin-right: 10px;
         fill: currentColor;
     }
         
-        .contacts:hover, 
-        .contacts:focus {
-        color: var(--accent-color);
-        }

@@ -1,9 +1,8 @@
 .ourworks {
     padding-top: 0;
     background-color: var(--main-sections-color);
-    }
 
-    .ourworks-title {
+        &__title {
         margin-bottom: 50px;
         
         font-weight: 700;
@@ -12,15 +11,16 @@
         text-align: center;
 
         color: var(--title-text-color);
+        }
     }
+
     .ourworks-list {
         display: flex;
         gap: 30px;
-    }
-
-        .ourworks-img {display: block;}
-        .ourworks-list-item {position: relative;}
-        .ourworks-list-text {
+        
+        &__img {display: block;}
+        &__item {position: relative;}
+        &__text {
             position: absolute;
             left: 0;
             bottom: 0;
@@ -44,4 +44,5 @@
 
             transition: opacity var(--duration) var(--timing-function); */
         }
+    }
             /* .ourworks-list-item:hover p {opacity: 1;} */
