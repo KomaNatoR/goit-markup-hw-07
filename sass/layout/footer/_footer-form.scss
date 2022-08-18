@@ -1,9 +1,19 @@
     .footer-container-form {margin-left: auto;}
     .footer-form {
         display: flex;
+
+        & button {
+            width: 200px;
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
     }
 
-        .footer-email {
+
+        .footer-form__email {
             width: 358px;
             height: 50px;
             margin-right: 12px;
@@ -17,27 +27,21 @@
             border-radius: 4px;
 
             transition: border-color var(--duration) var(--timing-function);
-        }
-        .footer-email:hover, .footer-email:focus {
-            border-color: var(--accent-color);
-            outline: transparent;
-        }
-        .footer-email::placeholder {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.25;
 
-            letter-spacing: 0.03em;
-            
-            color: rgba(255, 255, 255, 0.6);
-        }
-        
-        .footer-form button {
-            width: 200px;
-            height: 50px;
+            &:hover, &:focus {
+                border-color: var(--accent-color);
+                outline: transparent;
+            }
 
-            display: flex;
-            justify-content: center;
-            gap: 10px;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.25;
+
+                letter-spacing: 0.03em;
+                
+                color: rgba(255, 255, 255, 0.6);
+            }
         }
-        .telega-icon {fill: #FFFFFF;}
+
+        .footer-form__icon {fill: #FFFFFF;}

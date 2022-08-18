@@ -1,16 +1,6 @@
 .team {
     background-color: var(--back-teamsection-color);
 
-    &__title {
-        margin-bottom: 50px;
-
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
-
-        color: var(--title-text-color);
-    }
 }
 
 
@@ -20,7 +10,7 @@
         
     }
 
-    .team-list-item {
+    .team-card {
         padding-bottom: 30px;
         width: calc((100% - 90px) / 4);
         
@@ -52,21 +42,8 @@
             color: var(--main-text-color);
         }
     }
-
-            .soc-list {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-            }
             
-            .soc-list__link {
-                width: 44px;
-                height: 44px;
-                border-radius: 50%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .team-soc--color {
 
                 color: var(--main-icons-color);
 
@@ -81,4 +58,4 @@
                 }
             }
 
-            .soc-list__icon {fill: currentColor;}
+            

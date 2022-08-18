@@ -6,10 +6,12 @@
 @import "./components/body";
 @import "./components/container";
 @import "./components/button";
+@import "./components/soc-list";
+@import "./components/main-title";
 
 // site
 @import "./layout/header/header-main";
-@import "./layout/header/header-logo";
+@import "./layout/logo";
 @import "./layout/header/header-navigation";
 @import "./layout/header/header-contacts";
 
